@@ -1,5 +1,17 @@
-function changeBackgroundColor(color){
-	document.body.style.background = color;
+var bool = false;
+
+function changeBackgroundColor(color, color2){
+	if(!bool)
+	{
+		bool = true;
+		document.body.style.background = color;
+	}
+	else
+	{
+		bool = false;
+		document.body.style.background = color2;
+	}
+	
 }
 
 changeBackgroundColor("lightgreen");
